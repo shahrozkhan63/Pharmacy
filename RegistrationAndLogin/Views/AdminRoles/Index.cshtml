@@ -1,0 +1,39 @@
+﻿@model IEnumerable<RegistrationAndLogin.Models.AdminRole>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="main-content" id="content">
+    <h2>Index</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <div class="xs tabls">
+        <div class="bs-example4" data-example-id="contextual-table">
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Roletype)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+            {
+                    <tr class="td">
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Roletype)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.Role_id }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.Role_id }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.Role_id })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+    </div>
+</div>

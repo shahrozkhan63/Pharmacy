@@ -1,0 +1,191 @@
+﻿
+@{
+    
+    ViewBag.Title = "Index";
+}
+<div class="main-content" id="content">
+    @*<div align="center">
+        <input type="hidden" id="Totalbilll" class="form-control" readonly="readonly">
+        <marquee direction="left"
+                 loop="6"
+                 scrollamount="10"
+                 scrolldelay="100"
+                 behavior="alternate"
+                 width="60%"
+                 bgcolor="#fff">
+            <h1>AL-REHMAN PHARMACY BILLING</h1>.
+        </marquee>
+    </div>*@
+    @*<table class="table table-responsive" style="margin-left:800px;border:none;">
+        <tr>
+            <td style="padding-right:20px;">Total BiLL</td>
+            <td>
+                <input type="text" id="Totalbil" class="form-control" readonly="readonly">
+            </td>
+        </tr>
+        <tr class="mycontainer">
+            <td style="padding-right:20px;">RATE(DB)</td>
+            <td>
+                <input type="text" id="ratee" class="form-control" readonly="readonly">
+            </td>
+        </tr>
+    
+
+
+    </table>*@
+    <div class="container">
+        <div class="master">
+
+
+
+            @*<h2>DETAILS</h2>*@
+
+
+
+            <table class="table table-responsive">
+
+                <tr>
+                    <td>Discount</td>
+                    <td>
+                        <input type="number" id="Discount" class="form-control" placeholder="Eg:5=>5% , 10=>10%"min="1" max="30" />
+                    </td>
+                    <td style="padding-right:20px;">Total BiLL</td>
+                    <td>
+                        <input type="text" id="Totalbil" class="form-control" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input type="text" id="Name" class="form-control" placeholder="Customer Name" />
+                    </td>
+                    <td>Quantity</td>
+                    <td>
+                        <input type="text" id="quantityy" class="form-control" readonly="readonly">
+                    </td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>User</td>
+                    <td>
+                        <input type="text" id="orderNo" class="form-control" value="@HttpContext.Current.User.Identity.Name " readonly />
+                        <span class="error">Order no required</span>
+                    </td>
+                    <td>Order Date</td>
+                    <td>
+                        <input type="text" id="orderDate" class="form-control" value="@DateTime.Now" readonly />
+                        <span class="error">Valid order date required (ex: MM-dd-yyyy)</span>
+                    </td>
+                </tr>
+                <tr hidden>
+                    <td>Description</td>
+                    <td colspan="3">
+                        <textarea id="description" class="form-control"></textarea>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="details">
+            @*<h2>
+                ORDER ITEMS
+            </h2>*@
+            <table class="table table-responsive">
+                <tr>
+                    <td>Category</td>
+                    <td>Product</td>
+                    <td>Rate</td>
+                    <td>Quantity</td>
+                    <td>Total</td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr class="mycontainer" id="mainrow">
+                    <td>
+                        <select id="productCategory" class="pc form-control" onchange="LoadProduct(this)">
+                            <option>Select</option>
+                        </select>
+                        <span class="error">Select Category</span>
+                    </td>
+                    <td>
+                        <select id="product" class="product form-control" onchange="LoadProductrate(this), LoadProductquantity(this)">
+                            <option>Select</option>
+                        </select>
+                        <span class="error">Select product</span>
+                    </td>
+                    <td>
+                        <input type="text" id="ratee" class="rate form-control" readonly="readonly" />
+                        <span class="error">Valid rate required</span>
+                    </td>
+                    <td>
+                        <input  id="quantity" class="quantity form-control" type="number" min="1"/>
+                        <span class="error">Valid quantity required</span>
+                    </td>
+                    <td>
+                        <input type="text" id="total" class="total form-control" readonly="readonly" />
+                        <span class="error">Insert quantity and rate first</span>
+                    </td>
+
+                    <td>
+                        <input type="button" id="add" value="add" style="width:80px" class="btn btn-success" />
+                    </td>
+                </tr>
+            </table>
+            <div id="orderItems">
+                <table class="table table-responsive" id="orderdetailsItems"></table>
+                <span id="orderItemError" style="color:red"></span>
+            </div>
+            <div style="padding:10px 0; text-align:right">
+                <input id="submit" type="button" value="Save Order" class="btn btn-warning" style="padding:10px 20px" />
+            </div>
+        </div>
+    </div>
+    </div>
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />*@
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+
+    @section Scripts {
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+      <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+      <script src="~/Scripts/abcabc.js"></script>
+
+        @*<script>
+
+            //Date Picker
+            $(function () {
+                $('#orderDate').datepicker({
+                    dateFormat: 'mm-dd-yy'
+                });
+            });
+
+        </script>*@
+    }
+
+    <style>
+        span.error {
+            
+            visibility: hidden;
+            color: red;
+            font-size: 90%;
+        }
+
+        tr.error {
+            background-color: rgba(255,0,0,0.35);
+        }
+
+        .example1 {
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+
+
+
+
+
+
+
+
+

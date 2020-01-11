@@ -1,0 +1,540 @@
+﻿@*
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - My ASP.NET Application</title>
+        <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <script src="~/Scripts/modernizr-2.6.2.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="~/Content/bootstrap.min.css" rel='stylesheet' type='text/css' />
+        <!-- Custom CSS -->
+        <link href="~/Content/style3.css" rel='stylesheet' type='text/css' />
+        <!-- Graph CSS -->
+        <link href="~/Content/font-awesome.css" rel="stylesheet">
+        <!-- jQuery -->
+        <!-- lined-icons -->
+        <link rel="stylesheet" href="~/Content/icon-font.min.css" type='text/css' />
+        <!-- //lined-icons -->
+        <!--animate-->
+        <link href="~/Content/animate.css" rel="stylesheet" type="text/css" media="all">
+        <script src="~/Scripts/wow.min.js"></script>
+        <script>
+             new WOW().init();
+        </script>
+    </head>
+    <body id="k">
+        <!-- Navigation -->
+        <nav id="slide-menu">
+                <h2>DASHBOARD</h2>
+                <ul>
+                    <li></li>
+                    @Html.ActionLink("CATEGORIES", "Index", new { controller = "Categories", id = 1 }, new { @class = "btn btn-primary active" })
+                    <li></li>
+                    @Html.ActionLink("PRODUCT", "Index", new { controller = "Products", id = 1 }, new { @class = "btn btn-primary active" })
+                    <li></li>
+                    @Html.ActionLink("ORDER MASTER", "Index", new { controller = "OrderMasters", id = 1 }, new { @class = "btn btn-primary active" })
+                    <li></li>
+                    @Html.ActionLink("ORDER DETAIL", "Index", new { controller = "OrderDetails", id = 1 }, new { @class = "btn btn-primary active" })
+                    <li></li>
+                    @Html.ActionLink("CONTRACT", "Index", new { controller = "contracts", id = 1 }, new { @class = "btn btn-primary active" })
+                    <li></li>
+                    @Html.ActionLink("MANUFACTURER", "Index", new { controller = "manufacturers", id = 1 }, new { @class = "btn btn-primary active" })
+                    <li></li>
+                    @Html.ActionLink("PHARMACY", "Index", new { controller = "pharmacies", id = 1 }, new { @class = "btn btn-primary active" })
+                    <li></li>
+                    @Html.ActionLink("PRODUCT INVENTORY", "Index", new { controller = "Products_inventory", id = 1 }, new { @class = "btn btn-primary active" })
+                    <li></li>
+                    @Html.ActionLink("PRODUCT PURCHASE", "Index", new { controller = "product_purchase", id = 1 }, new { @class = "btn btn-primary active" })
+                    <li></li>
+                    @Html.ActionLink("SUPPLIER", "Index", new { controller = "suppliers", id = 1 }, new { @class = "btn btn-primary active" })
+                    <li></li>
+                </ul>
+
+                <ul>
+                    WELCOME TO AL-REHMAN @HttpContext.Current.User.Identity.Name
+                    @if (Request.IsAuthenticated)
+                {
+
+                    using (Html.BeginForm("Logout", "User", FormMethod.Post, new { id = "logoutForm" }))
+
+                    {
+
+                            <a href="javascript:document.getElementById('logoutForm').submit()" class="btn btn-info">     Logout</a>
+                        }
+                    }
+                    <li></li>
+
+
+                </ul>
+
+            </nav>
+
+            <div class="container body-content">
+                @RenderBody()
+                @RenderSection("scripts", required: false)
+                <hr />
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - All rights reserved</p>
+                </footer>
+            </div>
+        <script>
+                /*
+      Slidemenu
+    */
+                (function () {
+                    var $body = document.body
+                    , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+                    if (typeof $menu_trigger !== 'undefined') {
+                        $menu_trigger.addEventListener('click', function () {
+                            $body.className = ($body.className == 'menu-active') ? '' : 'menu-active';
+                        });
+                    }
+
+                }).call(this);</script>
+
+
+        <script src="~/Scripts/jquery.nicescroll.js"></script>
+        <script src="~/Scripts/scripts.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="~/Scripts/bootstrap.min.js"></script>
+
+    </body>
+    </html>*@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+
+
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <!-- Custom CSS -->
+    <link href="~/Content/style3.css" rel='stylesheet' type='text/css' />
+    <!-- Graph CSS -->
+    <link href="~/Content/font-awesome.css" rel="stylesheet">
+    <!-- jQuery -->
+    <!-- lined-icons -->
+    <link rel="stylesheet" href="~/Content/icon-font.min.css" type='text/css' />
+    <!-- //lined-icons -->
+    <!--animate-->
+    <link href="~/Content/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="~/Scripts/wow.min.js"></script>
+    <script>
+		 new WOW().init();
+    </script>
+    <!--//end-animate-->
+    <!----webfonts--->
+    <link href='//fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!---//webfonts--->
+    <!-- Meters graphs -->
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Content/style1.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">*@
+    @*<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>*@
+    @*<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"*@>
+    @*<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>*@
+
+    @*@Styles.Render("~/Content/css")*@
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body class="sticky-header left-side-collapsed" onload="initMap()">
+    <section>
+        <!-- left side start-->
+        <div class="left-side sticky-left-side">
+
+            <!--logo and iconic logo start-->
+            <div class="logo">
+                <h1><a href="/Home/Index/1">Al-<span>Rehman</span></a></h1>
+            </div>
+            <div class="logo-icon text-center">
+                <a href="/Home/Index/1"><i class="lnr lnr-home"></i> </a>
+            </div>
+
+            <!--logo and iconic logo end-->
+            <div class="left-side-inner">
+
+                <!--sidebar nav start-->
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                    <li class="active"><a href=""><i class="lnr lnr-power-switch"></i><span>Dashboard</span></a></li>
+
+
+                    @if (!User.Identity.IsAuthenticated)
+            {
+                        <li><a href="/User/Login/1"><i class="lnr lnr-spell-check"></i> <span>Login</span></a></li>
+
+                    }
+                    @if (User.Identity.IsAuthenticated)
+            {
+                if (ViewContext.HttpContext.User.IsInRole("Admin"))
+                {
+                            <li><a href="/User/Registration/1"><i class="lnr lnr-spell-check"></i> <span>Registration</span></a></li>
+
+
+                        }
+                    }
+
+
+                    @if (Request.IsAuthenticated)
+                    {
+                        if (ViewContext.HttpContext.User.IsInRole("Admin"))
+                        {
+
+                            <li class="menu-list">
+                                <a href="#">
+                                    <i class="lnr lnr-cog"></i>
+                                    <span>Information</span>
+                                </a>
+                                <ul class="sub-menu-list">
+                                    <li><a href="/Account/Index">Users</a></li>
+                                    <li><a href="/pharmacies/Index">Pharmacy</a></li>
+                                    <li><a href="/Contracts/Index">Contracts</a></li>
+                                    <li><a href="/AdminRoles/Index">AdminRoles</a></li>
+                                    <li><a href="/Suppliers/Index">Suppliers</a></li>
+                                    <li><a href="/manufacturers/Index">Manufacturers</a></li>
+  
+                                </ul>
+                            </li>
+
+
+                            <li class="menu-list">
+                                <a href="#">
+                                    <i class="lnr lnr-cog"></i>
+                                    <span>Orders</span>
+                                </a>
+                                <ul class="sub-menu-list">
+
+                                    <li><a href="/OrderDetails/Index">Order Details</a></li>
+                                    <li><a href="/OrderMasters/Index">Bills</a></li>
+                                    <li><a style="" data-toggle="modal" href="/Home/SendEmail/1" data-target="#myModal">Send Email</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <li class="menu-list">
+                                <a href="#">
+                                    <i class="lnr lnr-cog"></i>
+                                    <span>Inventory</span>
+                                </a>
+                                <ul class="sub-menu-list">
+
+
+                                    <li><a href="/Categories/Index">Categories</a></li>
+                                    <li><a href="/Products/Index">Products</a></li>
+                                    <li><a href="/Products_Inventory/Index">Products Inventory</a></li>
+                                    <li><a href="/product_purchase/Index">Products Purchase</a></li>
+                                </ul>
+                            </li>
+                        }
+
+                        if (ViewContext.HttpContext.User.IsInRole("User"))
+                        {
+
+                            <li class="menu-list">
+                                <a href="#">
+                                    <i class="lnr lnr-cog"></i>
+                                    <span>Information</span>
+                                </a>
+                                <ul class="sub-menu-list">
+                                 
+                                    
+                                    <li><a href="/Contracts/Index">Contracts</a></li>
+                                 
+                                    <li><a href="/Suppliers/Index">Suppliers</a></li>
+                                    <li><a href="/manufacturers/Index">Manufacturers</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <li class="menu-list">
+                                <a href="#">
+                                    <i class="lnr lnr-cog"></i>
+                                    <span>Orders</span>
+                                </a>
+                                <ul class="sub-menu-list">
+
+                                    <li><a href="/OrderDetails/Index">Order Details</a></li>
+                                    <li><a href="/OrderMasters/Index">Bills</a></li>
+                                    <li><a style="" data-toggle="modal" href="/Home/SendEmail/1" data-target="#myModal">Send Email</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <li class="menu-list">
+                                <a href="#">
+                                    <i class="lnr lnr-cog"></i>
+                                    <span>Inventory</span>
+                                </a>
+                                <ul class="sub-menu-list">
+
+
+                                    <li><a href="/Categories/Index">Categories</a></li>
+                                    <li><a href="/Products/Index">Products</a></li>
+                                    <li><a href="/Products_Inventory/Index">Products Inventory</a></li>
+                                    <li><a href="/product_purchase/Index">Products Purchase</a></li>
+                                </ul>
+                            </li>
+
+
+
+
+                        }
+
+
+                        if (ViewContext.HttpContext.User.IsInRole("Moderator"))
+                        {
+
+                            <li class="menu-list">
+                                <a href="#">
+                                    <i class="lnr lnr-cog"></i>
+                                    <span>Information</span>
+                                </a>
+                                <ul class="sub-menu-list">
+
+
+                                    <li><a href="/Contracts/Index">Contracts</a></li>
+
+                                    <li><a href="/Suppliers/Index">Suppliers</a></li>
+                                    <li><a href="/manufacturers/Index">Manufacturers</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <li class="menu-list">
+                                <a href="#">
+                                    <i class="lnr lnr-cog"></i>
+                                    <span>Orders</span>
+                                </a>
+                                <ul class="sub-menu-list">
+
+
+                                   
+                                    <li><a href="/OrderMasters/Index">Bills</a></li>
+                                    <li><a style="" data-toggle="modal" href="/Home/SendEmail/1" data-target="#myModal">Send Email</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <li class="menu-list">
+                                <a href="#">
+                                    <i class="lnr lnr-cog"></i>
+                                    <span>Inventory</span>
+                                </a>
+                                <ul class="sub-menu-list">
+
+
+                                    <li><a href="/Categories/Index">Categories</a></li>
+                                    <li><a href="/Products/Index">Products</a></li>
+                           
+                                </ul>
+                            </li>
+
+                        }
+
+
+
+                    }
+                </ul>
+                <!--sidebar nav end-->
+            </div>
+        </div>
+        <!-- left side end-->
+        <!-- main content start-->
+        <div class="main-content main-content1">
+            <!-- header-starts -->
+            <div class="header-section">
+
+                <!--toggle button start-->
+                <a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
+                <!--toggle button end-->
+                <!--notification menu start -->
+                <div class="menu-right">
+                    <div class="user-panel-top">
+
+                        <div class="profile_details">
+                            <ul>
+                                <li class="dropdown profile_details_drop">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <div class="profile_img">
+                                            <span id="firstName" style="display: none;visibility:hidden">@HttpContext.Current.User.Identity.Name</span>
+                                            @*<span id="lastName" hidden>Singh</span>*@
+                                            <span id="profileImage"> </span>
+                                            <div class="user-name">
+                                                @if (Request.IsAuthenticated)
+            {
+                                                    @*<li class="sep" style="margin-top:inherit;">@HttpContext.Current.User.Identity.Name </li>*@
+
+                                                    <p>
+                                                        @HttpContext.Current.User.Identity.Name
+                                                        @if (User.Identity.IsAuthenticated)
+                {
+                    if (ViewContext.HttpContext.User.IsInRole("Admin"))
+                    {
+
+                                                                <span>Administrator</span>
+                                                            }
+
+                                                            if (ViewContext.HttpContext.User.IsInRole("User"))
+                                                            {
+                                                                <span>Lab Assistant</span>
+
+                                                            }
+
+                                                            if (ViewContext.HttpContext.User.IsInRole("Moderator"))
+                                                            {
+                                                                <span>Pathologist</span>
+                                                            }
+                                                        }
+                                                    </p>
+                                                }
+
+                                                @*<p>Sam<span>Administrator</span></p>*@
+
+
+                                            </div>
+                                            <i class="lnr lnr-chevron-down"></i>
+                                            <i class="lnr lnr-chevron-up"></i>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu drp-mnu">
+                                        <li> <a href="/User/ForgotPassword"><i class="fa fa-cog"></i>Change Password</a> </li>
+                                        <li> <a href="#"><i class="fa fa-user"></i>Profile</a> </li>
+                                        @if (Request.IsAuthenticated)
+                                        {
+
+                                            using (Html.BeginForm("Logout", "User", FormMethod.Post, new { id = "logoutForm" }))
+
+                                            {
+                                                <li> <a href="javascript:document.getElementById('logoutForm').submit()"><i class="fa fa-sign-out"></i> Logout</a> </li>
+
+                                            }
+                                        }
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!--notification menu end -->
+            </div>
+            <!-- //header-ends -->
+
+
+
+
+        </div>
+
+        <!-- main content end-->
+
+
+
+
+
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <!-- Content panel -->
+        @*<div id="content">
+                <div class="menu-trigger"></div>
+                <a href="#myModal" data-toggle="modal"  title="Compose"    class="btn btn-compose">
+                                      Compose
+                                  </a>
+            </div>*@
+
+
+        <div class="container body-content">
+            @RenderBody()
+            @RenderSection("scripts", required: false)
+            <hr />
+
+            <footer>
+                <p>&copy; @DateTime.Now.Year - All rights reserved | Sir Syed UET Students</p>
+            </footer>
+
+
+        </div>
+
+
+    </section>
+
+    <script>
+            /*
+  Name On Text
+*/
+        $(document).ready(function () {
+            var firstName = $('#firstName').text();
+            var lastName = $('#lastName').text();
+            var intials = $('#firstName').text().charAt(0) + $('#lastName').text().charAt(0);
+            var profileImage = $('#profileImage').text(intials);
+        });
+        /*
+Classes Loop
+*/
+        var css_classes = ['success', 'active', 'info', 'warning','danger'];
+
+        var idx = 0
+        $("table.table .td").each(function (index) {
+            $(this).addClass(css_classes[idx]);
+            if (idx < css_classes.length - 1) {
+                idx += 1;
+            } else {
+                idx = 0;
+            }
+        });
+
+    </script>
+
+    <script src="~/Scripts/jquery.nicescroll.js"></script>
+    <script src="~/Scripts/scripts.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+</body>
+</html>
+

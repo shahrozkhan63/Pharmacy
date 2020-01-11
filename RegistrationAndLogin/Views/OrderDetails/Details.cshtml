@@ -1,0 +1,51 @@
+﻿@model RegistrationAndLogin.Models.OrderDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="main-content" id="content">
+    <h2>Details</h2>
+
+    <div>
+        <h4>OrderDetail</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.ProductID)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ProductID)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Rate)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Rate)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Quantity)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.OrderMaster.OrderNo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.OrderMaster.OrderNo)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.OrderDetialsID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>

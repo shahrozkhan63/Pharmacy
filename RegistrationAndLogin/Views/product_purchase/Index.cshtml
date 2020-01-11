@@ -1,0 +1,51 @@
+﻿@model IEnumerable<RegistrationAndLogin.Models.product_purchase>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="main-content" id="content">
+    <h2>Index</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <div class="xs tabls">
+        <div class="bs-example4" data-example-id="contextual-table">
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.purchase_date)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.total_amount)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.supplier.supplier_name)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr class="td">
+                        <td>
+                            @Html.DisplayFor(modelItem => item.purchase_date)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.total_amount)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.supplier.supplier_name)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.purchase_id }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.purchase_id }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.purchase_id })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+    </div>
+</div>

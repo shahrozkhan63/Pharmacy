@@ -1,0 +1,111 @@
+﻿@model IEnumerable<RegistrationAndLogin.Models.Products_Inventory>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="main-content" id="content">
+    <h2>Index</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <p>
+        @using (@Html.BeginForm("Index", "Products_Inventory", FormMethod.Get))
+        {
+            <b>Search By:</b>
+            @Html.RadioButton("searchBy", "ProductName", true) <text>ProductName</text>
+            @Html.RadioButton("searchBy", "formula") <text>Formula</text><br />
+            @Html.TextBox("search") <input type="submit" value="search" />
+        }
+    </p>
+    <div class="xs tabls">
+        <div class="bs-example4" data-example-id="contextual-table">
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ProductName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Quantity)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Rate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Rate_buy)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.mfg_date)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.exp_date)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.formula)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.description)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.manufacturer.manufacturer_name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.supplier.supplier_name)
+                    </th>
+                    <th></th>
+                </tr>
+@if (Model.Count() == 0)
+{
+    <tr>
+        <td colspan="4">
+            No records match search criteria
+        </td>
+    </tr>
+}
+else
+{
+                foreach (var item in Model)
+                {
+                    <tr class="td">
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProductName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Quantity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Rate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Rate_buy)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.mfg_date)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.exp_date)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.formula)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.manufacturer.manufacturer_name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.supplier.supplier_name)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.ProductIDD }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.ProductIDD }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.ProductIDD })
+                        </td>
+                    </tr>
+                }
+}
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,228 @@
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\roslyn\csc.exe
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\roslyn\System.Collections.Immutable.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\roslyn\vbc.exe
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\roslyn\VBCSCompiler.exe
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\roslyn\VBCSCompiler.exe.config
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\RegistrationAndLogin.dll.config
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\RegistrationAndLogin.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\RegistrationAndLogin.pdb
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\EntityFramework.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\EntityFramework.SqlServer.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\Microsoft.Web.Infrastructure.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Helpers.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Mvc.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Razor.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.Deployment.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.Razor.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\EntityFramework.xml
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\EntityFramework.SqlServer.xml
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Razor.xml
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.xml
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.Deployment.xml
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.Razor.xml
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Helpers.xml
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Mvc.xml
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.csprojResolveAssemblyReference.cache
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.dll
+c:\users\hamza\documents\visual studio 2015\RegistrationAndLogin\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.pdb
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.pdb
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\RegistrationAndLogin.dll.config
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\RegistrationAndLogin.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\RegistrationAndLogin.pdb
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\EntityFramework.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\EntityFramework.SqlServer.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Helpers.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Mvc.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Razor.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.Razor.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\EntityFramework.xml
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\EntityFramework.SqlServer.xml
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Razor.xml
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.xml
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.Razor.xml
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Helpers.xml
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Mvc.xml
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\Antlr3.Runtime.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\Newtonsoft.Json.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Optimization.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\WebGrease.dll
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\Antlr3.Runtime.pdb
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\Newtonsoft.Json.xml
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Optimization.xml
+C:\Users\Aamir\Desktop\RegistrationAndLogin\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.csprojResolveAssemblyReference.cache
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\RegistrationAndLogin.dll.config
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\RegistrationAndLogin.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\RegistrationAndLogin.pdb
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\Antlr3.Runtime.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\EntityFramework.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\EntityFramework.SqlServer.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\Microsoft.Web.Infrastructure.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\Newtonsoft.Json.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Helpers.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Mvc.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Optimization.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Razor.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.Deployment.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.Razor.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\WebGrease.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\Antlr3.Runtime.pdb
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\EntityFramework.xml
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\EntityFramework.SqlServer.xml
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\Newtonsoft.Json.xml
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Optimization.xml
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Razor.xml
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.xml
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.Deployment.xml
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Webpages.Razor.xml
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Helpers.xml
+D:\RegistrationAndLogin\RegistrationAndLogin\bin\System.Web.Mvc.xml
+D:\RegistrationAndLogin\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.dll
+D:\RegistrationAndLogin\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.pdb
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\RegistrationAndLogin.dll.config
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\RegistrationAndLogin.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\RegistrationAndLogin.pdb
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\Antlr3.Runtime.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\EntityFramework.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\EntityFramework.SqlServer.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\Microsoft.Web.Infrastructure.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\Newtonsoft.Json.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\System.Web.Helpers.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\System.Web.Mvc.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\System.Web.Optimization.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\System.Web.Razor.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Deployment.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Razor.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\WebGrease.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\Antlr3.Runtime.pdb
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\EntityFramework.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\EntityFramework.SqlServer.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\Newtonsoft.Json.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\System.Web.Optimization.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\System.Web.Razor.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Deployment.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Razor.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\System.Web.Helpers.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\bin\System.Web.Mvc.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.csprojResolveAssemblyReference.cache
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.pdb
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\RegistrationAndLogin.dll.config
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\RegistrationAndLogin.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\RegistrationAndLogin.pdb
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\Antlr3.Runtime.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\EntityFramework.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\EntityFramework.SqlServer.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\Microsoft.Web.Infrastructure.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\Newtonsoft.Json.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\System.Web.Helpers.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\System.Web.Mvc.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\System.Web.Optimization.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\System.Web.Razor.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Deployment.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Razor.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\WebGrease.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\Antlr3.Runtime.pdb
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\EntityFramework.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\EntityFramework.SqlServer.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\Newtonsoft.Json.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\System.Web.Optimization.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\System.Web.Razor.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Deployment.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Razor.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\System.Web.Helpers.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\bin\System.Web.Mvc.xml
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.dll
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.pdb
+E:\fyp works\AlrehmanPro\Pharmacy\Pharmacy(v1.0)\Pharmacy\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.csprojResolveAssemblyReference.cache
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\RegistrationAndLogin.dll.config
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\RegistrationAndLogin.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\RegistrationAndLogin.pdb
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\Antlr3.Runtime.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\EntityFramework.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\EntityFramework.SqlServer.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\Newtonsoft.Json.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\System.Web.Helpers.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\System.Web.Mvc.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\System.Web.Optimization.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\System.Web.Razor.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Razor.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\WebGrease.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\Antlr3.Runtime.pdb
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\EntityFramework.xml
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\EntityFramework.SqlServer.xml
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\Newtonsoft.Json.xml
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\System.Web.Optimization.xml
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\System.Web.Razor.xml
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.xml
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Razor.xml
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\System.Web.Helpers.xml
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\bin\System.Web.Mvc.xml
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.dll
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.pdb
+C:\Users\Aamir\Documents\Visual Studio 2015\Projects\Pharmacy\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.csprojResolveAssemblyReference.cache
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\RegistrationAndLogin.dll.config
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\RegistrationAndLogin.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\RegistrationAndLogin.pdb
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\Antlr3.Runtime.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\EntityFramework.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\EntityFramework.SqlServer.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\Microsoft.Web.Infrastructure.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\Newtonsoft.Json.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\System.Web.Helpers.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\System.Web.Mvc.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\System.Web.Optimization.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\System.Web.Razor.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Deployment.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Razor.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\WebGrease.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\Antlr3.Runtime.pdb
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\EntityFramework.xml
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\EntityFramework.SqlServer.xml
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\Newtonsoft.Json.xml
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\System.Web.Optimization.xml
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\System.Web.Razor.xml
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.xml
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Deployment.xml
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\System.Web.Webpages.Razor.xml
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\System.Web.Helpers.xml
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\bin\System.Web.Mvc.xml
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.csprojResolveAssemblyReference.cache
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.dll
+E:\fyp works\AlrehmanPro\Pharmacy\RegistrationAndLogin\obj\Debug\RegistrationAndLogin.pdb

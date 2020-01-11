@@ -1,0 +1,43 @@
+﻿@model RegistrationAndLogin.Models.product_purchase
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="main-content" id="content">
+    <h2>Details</h2>
+
+    <div>
+        <h4>product_purchase</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.purchase_date)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.purchase_date)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.total_amount)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.total_amount)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.supplier.supplier_name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.supplier.supplier_name)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.purchase_id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>

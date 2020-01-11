@@ -1,0 +1,94 @@
+﻿@model IEnumerable<RegistrationAndLogin.Models.OrderMaster>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="main-content" id="content">
+    <h2>Index</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <p>
+        @using (@Html.BeginForm("Index", "OrderMasters", FormMethod.Get))
+        {
+            <b>Search By:</b>
+            @Html.RadioButton("searchBy", "OrderID", true) <text>OrderID</text>
+            @Html.RadioButton("searchBy", "Name") <text>Name</text><br />
+            @Html.TextBox("SearchValue") <input type="submit" value="search" />
+        }
+        @ViewBag.Message
+    </p>
+    <div class="xs tabls">
+        <div class="bs-example4" data-example-id="contextual-table">
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OrderID)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OrderNo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OrderDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Description)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TotalBill)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Discount)
+                    </th>
+                    <th></th>
+                </tr>
+@if (Model.Count() == 0)
+{
+    <tr>
+        <td colspan="4">
+            No records match search criteria
+        </td>
+    </tr>
+}
+else
+{
+    foreach (var item in Model)
+    {
+                    <tr class="td">
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OrderID)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OrderNo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OrderDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TotalBill)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Discount)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.OrderID }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.OrderID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.OrderID })
+                        </td>
+                    </tr>
+    }
+}
+            </table>
+        </div>
+    </div>
+</div>

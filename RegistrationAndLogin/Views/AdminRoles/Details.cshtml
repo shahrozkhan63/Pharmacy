@@ -1,0 +1,27 @@
+﻿@model RegistrationAndLogin.Models.AdminRole
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="main-content" id="content">
+    <h2>Details</h2>
+
+    <div>
+        <h4>AdminRole</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Roletype)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Roletype)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Role_id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+    </div>

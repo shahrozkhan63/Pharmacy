@@ -1,0 +1,27 @@
+﻿@model RegistrationAndLogin.Models.Category
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="main-content" id="content">
+    <h2>Details</h2>
+
+    <div>
+        <h4>Category</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.CategortyName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CategortyName)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.CategoryID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+    </div>

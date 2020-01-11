@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AdminRole">
+    <Key>
+      <PropertyRef Name="Role_id" />
+    </Key>
+    <Property Name="Role_id" Type="Int32" Nullable="false" />
+    <Property Name="Roletype" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="CategortyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="contract">
+    <Key>
+      <PropertyRef Name="contract_id" />
+    </Key>
+    <Property Name="contract_id" Type="Int32" Nullable="false" />
+    <Property Name="supplier_id" Type="Int32" Nullable="false" />
+    <Property Name="start_date" Type="DateTime" Precision="3" />
+    <Property Name="end_date" Type="DateTime" Precision="3" />
+    <Property Name="description" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="supplier" Relationship="Self.FK_contract_supplier" FromRole="contract" ToRole="supplier" />
+  </EntityType>
+  <EntityType Name="manufacturer">
+    <Key>
+      <PropertyRef Name="manufacturer_id" />
+    </Key>
+    <Property Name="manufacturer_id" Type="Int32" Nullable="false" />
+    <Property Name="manufacturer_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="manufacturer_license" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Products_Inventory" Relationship="Self.FK_Products_Inventory_manufacturer" FromRole="manufacturer" ToRole="Products_Inventory" />
+  </EntityType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="OrderDetialsID" />
+    </Key>
+    <Property Name="OrderDetialsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderID" Type="Int32" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="Rate" Type="Decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="OrderMaster" Relationship="Self.FK_OrderDetails_OrderMaster" FromRole="OrderDetails" ToRole="OrderMaster" />
+  </EntityType>
+  <EntityType Name="OrderMaster">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OrderDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Description" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="TotalBill" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Discount" Type="Decimal" Precision="12" Scale="2" />
+    <NavigationProperty Name="OrderDetails" Relationship="Self.FK_OrderDetails_OrderMaster" FromRole="OrderMaster" ToRole="OrderDetails" />
+  </EntityType>
+  <EntityType Name="pharmacy">
+    <Key>
+      <PropertyRef Name="pharmacy_id" />
+    </Key>
+    <Property Name="pharmacy_id" Type="Int32" Nullable="false" />
+    <Property Name="pharmacy_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Contact" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_User_pharmacy" FromRole="pharmacy" ToRole="User" />
+  </EntityType>
+  <EntityType Name="product_purchase">
+    <Key>
+      <PropertyRef Name="purchase_id" />
+    </Key>
+    <Property Name="purchase_id" Type="Int32" Nullable="false" />
+    <Property Name="supplier_id" Type="Int32" Nullable="false" />
+    <Property Name="purchase_date" Type="DateTime" Precision="3" />
+    <Property Name="total_amount" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="supplier" Relationship="Self.FK_product_purchase_supplier" FromRole="product_purchase" ToRole="supplier" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Rate" Type="Int32" />
+    <Property Name="Formula" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="R_Strip_" Type="Int32" />
+    <Property Name="R_Piece_" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Products_Inventory">
+    <Key>
+      <PropertyRef Name="ProductIDD" />
+    </Key>
+    <Property Name="ProductIDD" Type="Int32" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Rate" Type="Int32" />
+    <Property Name="Rate_buy" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="mfg_date" Type="DateTime" Precision="3" />
+    <Property Name="exp_date" Type="DateTime" Precision="3" />
+    <Property Name="supplier_id" Type="Int32" Nullable="false" />
+    <Property Name="manufacturer_id" Type="Int32" Nullable="false" />
+    <Property Name="formula" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="manufacturer" Relationship="Self.FK_Products_Inventory_manufacturer" FromRole="Products_Inventory" ToRole="manufacturer" />
+    <NavigationProperty Name="supplier" Relationship="Self.FK_Products_Inventory_supplier" FromRole="Products_Inventory" ToRole="supplier" />
+  </EntityType>
+  <EntityType Name="supplier">
+    <Key>
+      <PropertyRef Name="supplier_id" />
+    </Key>
+    <Property Name="supplier_id" Type="Int32" Nullable="false" />
+    <Property Name="supplier_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="contact" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="email_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="contracts" Relationship="Self.FK_contract_supplier" FromRole="supplier" ToRole="contract" />
+    <NavigationProperty Name="product_purchase" Relationship="Self.FK_product_purchase_supplier" FromRole="supplier" ToRole="product_purchase" />
+    <NavigationProperty Name="Products_Inventory" Relationship="Self.FK_Products_Inventory_supplier" FromRole="supplier" ToRole="Products_Inventory" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsEmailVerified" Type="Boolean" Nullable="false" />
+    <Property Name="ActivationCode" Type="Guid" Nullable="false" />
+    <Property Name="pharmacy_id" Type="Int32" Nullable="false" />
+    <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ResetPasswordCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="pharmacy" Relationship="Self.FK_User_pharmacy" FromRole="User" ToRole="pharmacy" />
+  </EntityType>
+  <Association Name="FK_contract_supplier">
+    <End Role="supplier" Type="Self.supplier" Multiplicity="1" />
+    <End Role="contract" Type="Self.contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="supplier">
+        <PropertyRef Name="supplier_id" />
+      </Principal>
+      <Dependent Role="contract">
+        <PropertyRef Name="supplier_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Inventory_manufacturer">
+    <End Role="manufacturer" Type="Self.manufacturer" Multiplicity="1" />
+    <End Role="Products_Inventory" Type="Self.Products_Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manufacturer">
+        <PropertyRef Name="manufacturer_id" />
+      </Principal>
+      <Dependent Role="Products_Inventory">
+        <PropertyRef Name="manufacturer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetails_OrderMaster">
+    <End Role="OrderMaster" Type="Self.OrderMaster" Multiplicity="1" />
+    <End Role="OrderDetails" Type="Self.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderMaster">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="OrderDetails">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_pharmacy">
+    <End Role="pharmacy" Type="Self.pharmacy" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pharmacy">
+        <PropertyRef Name="pharmacy_id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="pharmacy_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_product_purchase_supplier">
+    <End Role="supplier" Type="Self.supplier" Multiplicity="1" />
+    <End Role="product_purchase" Type="Self.product_purchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="supplier">
+        <PropertyRef Name="supplier_id" />
+      </Principal>
+      <Dependent Role="product_purchase">
+        <PropertyRef Name="supplier_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Inventory_supplier">
+    <End Role="supplier" Type="Self.supplier" Multiplicity="1" />
+    <End Role="Products_Inventory" Type="Self.Products_Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="supplier">
+        <PropertyRef Name="supplier_id" />
+      </Principal>
+      <Dependent Role="Products_Inventory">
+        <PropertyRef Name="supplier_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MyDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdminRoles" EntityType="Self.AdminRole" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="contracts" EntityType="Self.contract" />
+    <EntitySet Name="manufacturers" EntityType="Self.manufacturer" />
+    <EntitySet Name="OrderDetails" EntityType="Self.OrderDetail" />
+    <EntitySet Name="OrderMasters" EntityType="Self.OrderMaster" />
+    <EntitySet Name="pharmacies" EntityType="Self.pharmacy" />
+    <EntitySet Name="product_purchase" EntityType="Self.product_purchase" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="Products_Inventory" EntityType="Self.Products_Inventory" />
+    <EntitySet Name="suppliers" EntityType="Self.supplier" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_contract_supplier" Association="Self.FK_contract_supplier">
+      <End Role="supplier" EntitySet="suppliers" />
+      <End Role="contract" EntitySet="contracts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Inventory_manufacturer" Association="Self.FK_Products_Inventory_manufacturer">
+      <End Role="manufacturer" EntitySet="manufacturers" />
+      <End Role="Products_Inventory" EntitySet="Products_Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetails_OrderMaster" Association="Self.FK_OrderDetails_OrderMaster">
+      <End Role="OrderMaster" EntitySet="OrderMasters" />
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_pharmacy" Association="Self.FK_User_pharmacy">
+      <End Role="pharmacy" EntitySet="pharmacies" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_product_purchase_supplier" Association="Self.FK_product_purchase_supplier">
+      <End Role="supplier" EntitySet="suppliers" />
+      <End Role="product_purchase" EntitySet="product_purchase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Inventory_supplier" Association="Self.FK_Products_Inventory_supplier">
+      <End Role="supplier" EntitySet="suppliers" />
+      <End Role="Products_Inventory" EntitySet="Products_Inventory" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

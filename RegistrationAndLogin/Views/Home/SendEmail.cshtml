@@ -1,0 +1,133 @@
+﻿@model RegistrationAndLogin.Models.EmailContent
+@{
+    Layout = null;
+}
+@*<div id="content">
+    <div class="menu-trigger"></div>
+    <h2>email</h2>*@
+@* @using (@Html.BeginForm("SendEmail", "Home", FormMethod.Post, new { @id = "form1", @enctype = "multipart/form-data" }))
+        {
+            <div class="col-md-9">
+                <div class="form-horizontal">
+                    <div class="form-group ">
+                        @Html.LabelFor(model => model.employee_id, "Patient", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10 textarea1">
+                            @Html.DropDownList("employee_id", null, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.employee_id, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.EmailSubject, htmlAttributes: new { @class = "control-label col-md-2", @for = "Subject" })
+                        <div class="col-md-10 textarea1">
+                            @Html.TextBoxFor(model => model.EmailSubject, new { @class = "form-control", @id = "Subject" })
+                            @Html.ValidationMessageFor(model => model.EmailSubject, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        @Html.LabelFor(model => model.EmailBody, htmlAttributes: new { @class = "control-label col-md-2", @for = "Body" })
+                        <div class="col-md-10 textarea1">
+                            @Html.TextAreaFor(model => model.EmailBody, new { @class = "form-control", @id = "Body" })
+                            @Html.ValidationMessageFor(model => model.EmailBody, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="file" class="control-label col-md-2">File input</label>
+                        <div class="col-md-10">
+                            <input type="file" multiple="multiple" name="files" id="file">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Send" class="btn btn-default" />
+                            @ViewBag.Message
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    <a href="#myModal" data-toggle="modal" title="Compose" class="btn btn-compose">
+        Compose
+    </a>*@
+
+
+
+@*<div id="myModal" class="modal fade">*@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <a aria-hidden="true" style="" class="close" href="/Home/Index/1">x</a>
+            <h4 class="modal-title">Compose</h4>
+        </div>
+        <div class="modal-body" id="divEmp1">
+
+            
+                @using (Html.BeginForm(Ajax.BeginForm("SendEmail", "Home", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "divEmp1" })))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        <div class="form-group ">
+                            @Html.LabelFor(model => model.supplier_id, "Supplier", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10 ">
+                                @Html.DropDownList("supplier_id", null, htmlAttributes: new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.supplier_id, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.EmailSubject, htmlAttributes: new { @class = "control-label col-md-2", @for = "Subject" })
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(model => model.EmailSubject, new { @class = "form-control", @id = "Subject" })
+                                @Html.ValidationMessageFor(model => model.EmailSubject, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            @Html.LabelFor(model => model.EmailBody, htmlAttributes: new { @class = "control-label col-md-2", @for = "Body" })
+                            <div class="col-md-10">
+                                @Html.TextAreaFor(model => model.EmailBody, new { @class = "form-control", @id = "Body" })
+                                @Html.ValidationMessageFor(model => model.EmailBody, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        @*<div class="form-group">
+                        <label for="file" class="control-label col-md-2">File input</label>
+                        <div class="col-md-10">
+                            <input type="file" multiple="multiple" name="files" id="file">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Send" class="btn btn-default" />
+                            @ViewBag.Message
+                            <br />
+
+                        </div>
+                    </div>*@
+
+                        <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+
+                                @*<span class="btn green fileinput-button">
+                                    <i class="fa fa-plus fa fa-white"></i>
+                                    <span>Attachment</span>
+                                    <input type="file" multiple="multiple" name="files" id="file">
+                                </span>*@
+                                @ViewBag.Message
+                                <button class="btn btn-send" id="approve-btn" type="submit">Send</button>
+
+                                <br />
+                            </div>
+                        </div>
+                    </div> }
+
+
+                @*</form>*@
+            </div>
+    </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+@*</div>*@<!-- /.modal -->
+@*</div>*@
+
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
